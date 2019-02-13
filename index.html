@@ -7,15 +7,33 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header
-    <h1><b>RESUME</b></h1><br>
-    <a href="form.html"><img src="images.jpg" alt="image"</a>
-  </header>
-  <div class="parent">
+    <header>
 
-  </div>
+      <a href="form.html"><img src="pen.jpeg" alt="image" width=150px height=150px></a>
+    </header>
+    <div class="parent">
+
+    </div>
   </body>
 </html>
 <script type="text/javascript" src="main.js">
 
+</script>
+//service worker
+<script type="text/javascript">
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register("sw.js")
+    .then(function(register){
+      register.addEventListener('update found',function(){
+        var installingsw=register.installing;
+        console.log("service worker is installing",installingsw);
+      });
+    })
+    .catch(function(e){
+      console.log("Error"+e);
+    });
+  }
+  else{
+    console.log("browser is not supporting service worker");
+  }
 </script>

@@ -1,28 +1,34 @@
+/*form.html*/
+
 .main{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 2px solid #ddd ;
+  justify-content: center;
+  border:2px solid green;
+  background-color: lightgreen;
   width:100%;
-  justify-content: center
-
 }
 .s1{
-  width: 90%;
-  margin: 2%;
-  padding: 2%;
-  border: 2px solid #ddd;
+  width:85%;
+  margin:2%;
+  padding:2%;
+  border:2px solid yellow;
+  background-color: powderblue;
 }
 .s2{
-  width: 40%;
-  margin: 2%;
-  padding: 2%;
-  border: 2px solid #ddd;
+  width:40%;
+  margin:2%;
+  padding:2%;
+  border:2px solid yellow;
+  background-color: powderblue;
 }
 select,input{
   width: 80%;
 }
 
+
+/*index.html*/
 header{
   text-align: center;
 }
@@ -33,28 +39,29 @@ header{
 }
 .child{
   width: 25%;
-  border: 1px solid #000;
-  box-shadow: 3px 3px 3px #ddd;
+  border: 1px solid skyblue;
+  box-shadow: 3px 3px 3px red;
   padding: 1%;
   margin: 1%;
 }
-/*resue.html*/
+
+/*resume.html*/
 .main1{
-  display: flex;
+  display:flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  border: 2px solid #ddd;
-  }
-  .left{
-    width: 25%;
-    margin: 2%;
-    padding: 2%;
-    border: 2px solid #ddd;
-  }
-  .right{
-   width: 65%;
-   margin: 2%;
-   padding: 2%;
-   border: 2px solid #ddd;
-  }
+  border: 2px solid pink;
+}
+.left{
+  width: 25%;
+  margin: 2%;
+  padding: 2%;
+  border: 2px solid violet;
+}
+.right{
+  width: 65%;
+  margin: 2%;
+  padding: 2%;
+  border: 2px solid red;
+}
